@@ -2173,21 +2173,27 @@ a:hover {
 .header .header__inner {
 	width: 100%;
 	padding: 20px 0;
-}
-
-.header .header__inner:after {
-	content: '';
-	display: table;
-	clear: both;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .header .header__left {
-	float: left;
-	width: 450px;
+	width: 540px;
+	display: block;
 }
 
 .header-logo {
-	width: 88px;
+	width: 180px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 20px;
@@ -2207,7 +2213,6 @@ a:hover {
 }
 
 .header-contacts {
-	float: right;
 	width: 350px;
 	margin-top: 7px;
 	text-align: right;
@@ -2239,7 +2244,7 @@ a:hover {
 	border: 1px solid #000;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	background-color: #AD9858;
+	background-color: #63265d;
 	color: #fff;
 	font-size: 18px;
 	padding: 6px 15px;
@@ -2248,12 +2253,7 @@ a:hover {
 }
 
 .phones .phones__link:hover {
-	background-color: #000;
-	color: #fff;
-}
-
-.phones .phones__link:hover {
-	background-color: #000;
+	background-color: rgba(49, 49, 64, 0.8);
 	color: #fff;
 }
 
@@ -2304,7 +2304,7 @@ a:hover {
 
 .first .first__left {
 	width: 450px;
-	background-color: #AD9858;
+	background-color: #63265d;
 	padding: 30px 20px;
 	position: relative;
 	margin-bottom: 40px;
@@ -2317,7 +2317,8 @@ a:hover {
 	top: 0;
 	height: 100%;
 	width: 4000px;
-	background-color: rgba(166, 151, 92, 0.7);
+	background-color: #63265d;
+	opacity: .7;
 }
 
 .first .first__left input {
@@ -2331,6 +2332,7 @@ a:hover {
 	border: 2px solid #fff;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+	width: 100%;
 }
 
 .first .first__left input::-webkit-input-placeholder {
@@ -2359,7 +2361,13 @@ a:hover {
 	font-size: 22px;
 	background-color: #000;
 	color: #fff;
-	width: 324px;
+	width: 100%;
+}
+
+.first .first__left form {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .first .first__title {
@@ -2410,11 +2418,11 @@ a:hover {
 }
 
 .portfolio .lSSlideOuter .lSPager.lSpg li.active a {
-	background-color: #AD9858;
+	background-color: #63265d;
 }
 
 .portfolio .lSSlideOuter .lSPager.lSpg li.active a:hover {
-	background-color: #AD9858;
+	background-color: #63265d;
 }
 
 .portfolio .lSSlideOuter .lSPager.lSpg a {
@@ -2548,8 +2556,8 @@ a:hover {
 	padding: 0;
 	list-style-type: none;
 	background-color: #e8e8e8;
-	border-left: 8px solid #AD9858;
-	border-right: 8px solid #AD9858;
+	border-left: 8px solid #63265d;
+	border-right: 8px solid #63265d;
 	position: relative;
 	max-width: 640px;
 	margin: 0 auto;
@@ -2566,7 +2574,7 @@ a:hover {
 	right: 0;
 	width: 4000px;
 	height: 8px;
-	background-color: #AD9858;
+	background-color: #63265d;
 }
 
 .benefits .benefits__list:after {
@@ -2576,7 +2584,7 @@ a:hover {
 	left: 0;
 	width: 4000px;
 	height: 8px;
-	background-color: #AD9858;
+	background-color: #63265d;
 }
 
 .benefits .benefits__item {
@@ -2668,7 +2676,7 @@ a:hover {
 	border: 1px solid #000;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	background-color: #AD9858;
+	background-color: #63265d;
 	color: #fff;
 	font-size: 18px;
 	height: 50px;
@@ -2676,7 +2684,7 @@ a:hover {
 }
 
 .bottom-order .bottom-order__form button:hover {
-	background-color: #000;
+	background-color: rgba(49, 49, 64, 0.8);
 	color: #fff;
 }
 
@@ -2709,7 +2717,7 @@ a:hover {
 
 .catalog-box .catalog-box__img {
 	margin-bottom: 10px;
-	height: 175px;
+	height: 230px;
 	overflow: hidden;
 }
 
@@ -2886,7 +2894,7 @@ body .lSAction > a {
 	border: 1px solid #000;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background-color: #AD9858;
+	background-color: #63265d;
 	color: #fff;
 	font-size: 18px;
 	height: 40px;
@@ -2895,7 +2903,7 @@ body .lSAction > a {
 }
 
 .phone-modal .phone-modal__button:hover {
-	background-color: #000;
+	background-color: rgba(49, 49, 64, 0.8);
 	color: #fff;
 }
 
@@ -3725,7 +3733,7 @@ body button,
 }
 
 .col-lg-offset-0 {
-	margin-left: 0%;
+	margin-left: 0;
 }
 
 }
@@ -3739,6 +3747,19 @@ body button,
 }
 
 @media (max-width: 992px) {
+
+.header .header__left {
+	width: 500px;
+}
+
+.header-logo {
+	width: 160px;
+}
+
+.header-slogan {
+	width: 270px;
+	font-size: 16px;
+}
 
 .header-contacts {
 	width: 200px;
@@ -3782,6 +3803,19 @@ body button,
 }
 
 @media (max-width: 768px) {
+
+.header .header__left {
+	width: 160px;
+}
+
+.header-logo {
+	margin-right: 0;
+	width: 100%;
+}
+
+.header-slogan {
+	display: none;
+}
 
 .top-menu .top-menu__toggle {
 	display: block;
@@ -3903,10 +3937,6 @@ body button,
 
 @media (max-width: 680px) {
 
-.header .header__left {
-	width: 100px;
-}
-
 .phones .phones__link {
 	margin-left: 0;
 }
@@ -3931,6 +3961,10 @@ body button,
 .first .first__left button {
 	width: 100%;
 	font-size: 16px;
+}
+
+.first .first__left form {
+	width: 100%;
 }
 
 .first .first__left {
@@ -3986,6 +4020,10 @@ body button,
 }
 
 @media (max-width: 375px) {
+
+.header .header__left {
+	width: 120px;
+}
 
 .header-contacts {
 	width: 150px;
