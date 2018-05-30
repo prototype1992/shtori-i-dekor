@@ -2165,6 +2165,13 @@ a:hover {
 	text-decoration: none;
 }
 
+.develop {
+	text-align: center;
+	background-color: red;
+	color: #ffffff;
+	padding: 5px 0;
+}
+
 .header {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #ffffff;

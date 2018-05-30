@@ -1,12 +1,16 @@
 <?php
 
-// Подключаем функции
-require_once('functions.php');
+// очистка полей
+function clear_data($data) {
+  $data = trim( htmlspecialchars( $data ) );
+  return $data;
+}
+
 
 // данные администратора
-$recepient = "europasia@list.ru";
-// $recepient = "alisultanovshamil1992@gmail.com";
-$sitename = "europa-asia.com";
+$recepient = "zanaves@bk.ru";
+$recepient2 = "alisultanovshamil1992@gmail.com";
+$sitename = "shtori-i-dekor.ru";
 
 // Принимаемые данные
 $name = clear_data($_POST["order-name"]);
@@ -33,14 +37,7 @@ $pagetitle = "Новая заявка с сайта \"$sitename\"";
 
 // отправляем
 mail($recepient, $pagetitle, $message, "Content-type: text/html; charset=\"utf-8\"\n From: $recepient");
+mail($recepient2, $pagetitle, $message, "Content-type: text/html; charset=\"utf-8\"\n From: $recepient");
 
-// Подключаемся к бд
-db_connect();
-
-// Составляем запрос
-$query = "INSERT INTO `orders` (`name`, `phone`, `datetime`) VALUES ('$name', '$phone', CURRENT_TIMESTAMP)";
-
-// Добавляем в бд
-mysql_query($query);
 
 ?>
