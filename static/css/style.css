@@ -2306,7 +2306,22 @@ a:hover {
 	background-size: cover;
 	color: #fff;
 	position: relative;
-	padding-top: 40px;
+}
+
+.first .first__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 60px 0;
 }
 
 .first .first__left {
@@ -2314,7 +2329,6 @@ a:hover {
 	background-color: #63265d;
 	padding: 30px 20px;
 	position: relative;
-	margin-bottom: 40px;
 }
 
 .first .first__left:before {
@@ -2328,7 +2342,20 @@ a:hover {
 	opacity: .7;
 }
 
-.first .first__left input {
+.first .first__right {
+	width: 450px;
+	background-color: #63265d;
+	padding: 30px 20px;
+	position: relative;
+}
+
+.first .first__form {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.first .first__input {
 	background-color: transparent;
 	text-align: inherit;
 	padding: 13px 26px;
@@ -2342,23 +2369,23 @@ a:hover {
 	width: 100%;
 }
 
-.first .first__left input::-webkit-input-placeholder {
+.first .first__input::-webkit-input-placeholder {
 	color: #fff;
 }
 
-.first .first__left input::-moz-placeholder {
+.first .first__input::-moz-placeholder {
 	color: #fff;
 }
 
-.first .first__left input:-moz-placeholder {
+.first .first__input:-moz-placeholder {
 	color: #fff;
 }
 
-.first .first__left input:-ms-input-placeholder {
+.first .first__input:-ms-input-placeholder {
 	color: #fff;
 }
 
-.first .first__left button {
+.first .first__submit {
 	padding: 13px 26px;
 	display: block;
 	margin: 0 auto;
@@ -2371,16 +2398,12 @@ a:hover {
 	width: 100%;
 }
 
-.first .first__left form {
-	width: 350px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .first .first__title {
 	margin: 0 0 20px;
-	font-size: 36px;
-	line-height: 40px;
+	font-size: 28px;
+	line-height: 35px;
+	text-transform: none;
+	text-align: center;
 }
 
 .first .first__bottom {
@@ -2394,6 +2417,76 @@ a:hover {
 	margin: 0;
 	font-size: 26px;
 	line-height: 34px;
+}
+
+.our-benefits {
+	padding: 80px 0;
+}
+
+.our-benefits .our-benefits__title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.our-benefits .our-benefits__descr {
+	margin-top: 0;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.our-benefits .our-benefits__list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.our-benefits .our-benefits__item {
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+.our-benefits .our-benefits__item_no-mb {
+	margin-bottom: 0;
+}
+
+.our-benefits .our-benefits__img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	height: 76px;
+	width: auto;
+}
+
+.our-benefits .our-benefits__text {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .portfolio {
@@ -3850,15 +3943,15 @@ body button,
 	width: 100%;
 }
 
-.first .first__left input {
-	width: 80%;
-}
-
-.first .first__left button {
-	width: 80%;
-}
-
 .first .first__left {
+	width: 80%;
+}
+
+.first .first__input {
+	width: 80%;
+}
+
+.first .first__submit {
 	width: 80%;
 }
 
@@ -3873,6 +3966,11 @@ body button,
 .first {
 	padding-top: 25px;
 	min-height: 10px;
+}
+
+.our-benefits .our-benefits__title {
+	font-size: 24px;
+	line-height: 27px;
 }
 
 .portfolio .portfolio__title {
@@ -3960,22 +4058,22 @@ body button,
 
 @media (max-width: 575px) {
 
-.first .first__left input {
-	width: 100%;
-	font-size: 16px;
-}
-
-.first .first__left button {
-	width: 100%;
-	font-size: 16px;
-}
-
-.first .first__left form {
-	width: 100%;
-}
-
 .first .first__left {
 	width: 90%;
+}
+
+.first .first__form {
+	width: 100%;
+}
+
+.first .first__input {
+	width: 100%;
+	font-size: 16px;
+}
+
+.first .first__submit {
+	width: 100%;
+	font-size: 16px;
 }
 
 .first .first__title {
