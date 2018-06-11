@@ -2199,18 +2199,18 @@ a:hover {
 	display: block;
 }
 
-.header-logo {
+.header .header-logo {
 	width: 180px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 20px;
 }
 
-.header-logo img {
+.header .header-logo img {
 	display: block;
 }
 
-.header-slogan {
+.header .header-slogan {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 15px;
@@ -2219,32 +2219,32 @@ a:hover {
 	width: 400px;
 }
 
-.header-contacts {
+.header .header-contacts {
 	width: 375px;
 	margin-top: 7px;
 	text-align: right;
 }
 
-.header-contacts p {
+.header .header-contacts p {
 	margin: 0;
 }
 
-.address {
+.header .address {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.phones {
+.header .phones {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.phones p {
+.header .phones p {
 	font-size: 22px;
 	margin-bottom: 6px;
 }
 
-.phones .phones__link {
+.header .phones .phones__link {
 	display: inline-block;
 	vertical-align: middle;
 	text-decoration: none;
@@ -2258,13 +2258,14 @@ a:hover {
 	margin-left: 20px;
 }
 
-.phones .phones__link:hover {
+.header .phones .phones__link:hover {
 	border: 1px solid #d0aa3f;
 	background-color: #fff;
 	color: #d0aa3f;
 }
 
 .top-menu {
+	display: none;
 	border-bottom: 1px solid #000000;
 	background-color: #ffffff;
 }
@@ -2329,16 +2330,6 @@ a:hover {
 	background-color: #63265d;
 	padding: 30px 20px;
 	position: relative;
-}
-
-.first .first__left:before {
-	position: absolute;
-	right: 100%;
-	top: 0;
-	height: 100%;
-	width: 4000px;
-	background-color: #63265d;
-	opacity: .7;
 }
 
 .first .first__right {
@@ -3036,6 +3027,7 @@ a:hover {
 .about-our-warranties .about-our-warranties__descr {
 	font-size: 20px;
 	margin-bottom: 30px;
+	padding: 0 20px;
 }
 
 .about-our-warranties .about-our-warranties__list {
@@ -3054,11 +3046,15 @@ a:hover {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .about-our-warranties .about-our-warranties__item {
 	width: 33%;
 	padding: 0 50px;
+	margin-bottom: 15px;
 }
 
 .about-our-warranties .about-our-warranties__img {
@@ -3154,7 +3150,7 @@ a:hover {
 .benefits-bottom .benefits-bottom__text {
 	margin-top: 0;
 	margin-bottom: 0;
-	width: 270px;
+	max-width: 270px;
 }
 
 .index-contacts {
@@ -3176,7 +3172,7 @@ a:hover {
 
 .index-contacts .index-contacts-form__inner {
 	position: relative;
-	width: 1100px;
+	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -4298,9 +4294,13 @@ body button,
 	width: 500px;
 }
 
-.header-slogan {
+.header .header-slogan {
 	width: 270px;
 	font-size: 14px;
+}
+
+.about-our-warranties .about-our-warranties__item {
+	padding: 0;
 }
 
 .gallery .gallery__item {
@@ -4315,34 +4315,43 @@ body button,
 	width: 500px;
 }
 
-.header-logo {
+.header .header-logo {
 	width: 160px;
 }
 
-.header-slogan {
+.header .header-slogan {
 	width: 270px;
 }
 
-.header-contacts {
+.header .header-contacts {
 	width: 200px;
 }
 
-.address {
+.header .address {
 	display: none;
 }
 
-.first .first__left:before {
-	display: none;
+.first .first__wrap {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding: 0 0 25px;
 }
 
 .first .first__left {
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 	margin-bottom: 25px;
 }
 
+.first .first__right {
+	width: 100%;
+}
+
 .first .first__title {
-	font-size: 28px;
+	font-size: 24px;
+	line-height: 30px;
 	text-align: center;
 }
 
@@ -4364,18 +4373,187 @@ body button,
 
 }
 
+@media (max-width: 991px) {
+
+.our-benefits .our-benefits__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.we-offer .we-offer__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.feedback .feedback-title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.feedback .feedback-form:before {
+	display: none;
+}
+
+.feedback {
+	padding: 30px 0;
+}
+
+.curtains-for-various .curtains-for-various__part {
+	padding: 15px 0;
+}
+
+.curtains-for-various .curtains-for-various__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.curtains-for-various {
+	padding: 30px 0;
+}
+
+.designer-house .designer-house__title {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.designer-house .designer-house__text {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.gallery-of-works .gallery-of-works__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.gallery-of-works .gallery-of-works__small {
+	margin-bottom: 14px;
+}
+
+.gallery-of-works .gallery-of-works__small_nomargin {
+	margin-bottom: 0;
+}
+
+.gallery-of-works {
+	padding: 30px 0;
+}
+
+.how-works .how-works__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.about-our-warranties .about-our-warranties__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.about-our-warranties {
+	padding: 30px 0;
+}
+
+.benefits-bottom .benefits-bottom__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.benefits-bottom .benefits-bottom__item {
+	font-size: 14px;
+	margin-bottom: 15px;
+	padding: 12px;
+}
+
+.benefits-bottom .benefits-bottom__img {
+	width: 60px;
+}
+
+.benefits-bottom {
+	padding: 30px 0;
+}
+
+.index-contacts .index-contacts__title {
+	padding: 0 20px;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.index-contacts .index-contacts__title {
+	padding: 20px;
+	-webkit-box-ordinal-group: 3;
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+	width: 100%;
+}
+
+.index-contacts .index-contacts-form__inner {
+	-webkit-box-ordinal-group: 2;
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+.index-contacts {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.index-contacts-form {
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.index-map-block {
+	-webkit-box-ordinal-group: 4;
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+	height: 300px;
+}
+
+.phone-modal .header-phone__title {
+	font-size: 20px;
+}
+
+}
+
 @media (max-width: 768px) {
 
 .header .header__left {
 	width: 160px;
 }
 
-.header-logo {
+.header .header-logo {
 	margin-right: 0;
 	width: 100%;
 }
 
-.header-slogan {
+.header .header-slogan {
 	display: none;
 }
 
@@ -4405,10 +4583,6 @@ body button,
 	width: 100%;
 }
 
-.first .first__left {
-	width: 80%;
-}
-
 .first .first__input {
 	width: 80%;
 }
@@ -4418,7 +4592,7 @@ body button,
 }
 
 .first .first__title {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .first .first__bottom p {
@@ -4430,54 +4604,36 @@ body button,
 	min-height: 10px;
 }
 
-.our-benefits .our-benefits__title {
-	font-size: 24px;
-	line-height: 27px;
+.our-benefits .our-benefits__item {
+	width: 50%;
 }
 
-.we-offer .we-offer__title {
-	font-size: 24px;
-	line-height: 27px;
+.our-benefits .our-benefits__img {
+	height: 50px;
 }
 
-.feedback .feedback-title {
-	font-size: 24px;
-	line-height: 27px;
+.our-benefits .our-benefits__text {
+	font-size: 14px;
+	line-height: 18px;
 }
 
-.curtains-for-various .curtains-for-various__title {
-	font-size: 24px;
-	line-height: 27px;
+.our-benefits {
+	padding: 30px 0;
 }
 
-.gallery-of-works .gallery-of-works__title {
-	font-size: 24px;
-	line-height: 27px;
+.we-offer .we-offer__item {
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.how-works .how-works__title {
-	font-size: 24px;
-	line-height: 27px;
+.we-offer {
+	padding: 30px 0;
 }
 
 .how-works .how-works__item {
 	width: 33.33%;
 	margin-bottom: 15px;
-}
-
-.about-our-warranties .about-our-warranties__title {
-	font-size: 24px;
-	line-height: 27px;
-}
-
-.benefits-bottom .benefits-bottom__title {
-	font-size: 24px;
-	line-height: 27px;
-}
-
-.index-contacts .index-contacts__title {
-	font-size: 24px;
-	line-height: 27px;
 }
 
 .catalog .catalog__item {
@@ -4518,9 +4674,104 @@ body button,
 
 }
 
+@media (max-width: 767px) {
+
+.our-benefits .our-benefits__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.we-offer .we-offer__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.feedback .feedback-title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.feedback .feedback-form {
+	display: block;
+	padding: 0 25px;
+}
+
+.feedback .feedback-input {
+	width: 100%;
+}
+
+.feedback .feedback-btn {
+	width: 100%;
+}
+
+.curtains-for-various .curtains-for-various__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.curtains-for-various .curtains-for-various__item {
+	width: 48%;
+}
+
+.designer-house .designer-house__inner {
+	display: block;
+}
+
+.designer-house .designer-house__left {
+	width: 100%;
+	margin-right: 0;
+}
+
+.designer-house .designer-house__img {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.designer-house .designer-house__right {
+	width: 100%;
+	text-align: center;
+}
+
+.designer-house .designer-house__btn {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.designer-house {
+	padding: 10px 0 40px;
+}
+
+.gallery-of-works .gallery-of-works__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.how-works .how-works__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.about-our-warranties .about-our-warranties__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.benefits-bottom .benefits-bottom__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.index-contacts .index-contacts__title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+}
+
 @media (max-width: 680px) {
 
-.phones .phones__link {
+.header .phones .phones__link {
 	margin-left: 0;
 }
 
@@ -4535,10 +4786,6 @@ body button,
 }
 
 @media (max-width: 575px) {
-
-.first .first__left {
-	width: 90%;
-}
 
 .first .first__form {
 	width: 100%;
@@ -4555,24 +4802,92 @@ body button,
 }
 
 .first .first__title {
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.first .first__descr {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.first .first__item {
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .first .first__bottom p {
 	line-height: 24px;
 }
 
+.curtains-for-various .curtains-for-various__item {
+	width: 100%;
+}
+
+.designer-house .designer-house__title {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.gallery-of-works .gallery-of-works__item {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.gallery-of-works .gallery-of-works__big {
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.gallery-of-works .gallery-of-works__smalls {
+	width: 100%;
+}
+
+.gallery-of-works .gallery-of-works__inner p {
+	font-size: 16px;
+}
+
 .how-works .how-works__item {
 	width: 100%;
+}
+
+.about-our-warranties .about-our-warranties__item {
+	width: 100%;
+}
+
+.about-our-warranties .about-our-warranties__text br {
+	display: none;
+}
+
+.benefits-bottom .benefits-bottom__item {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.benefits-bottom .benefits-bottom__text {
+	max-width: 405px;
+}
+
+.footer .copyright {
+	line-height: 30px;
+}
+
+.footer {
+	font-size: 14px;
+	line-height: 30px;
 }
 
 }
 
 @media (max-width: 480px) {
 
-.first .first__left {
+.we-offer .we-offer__item {
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .catalog .catalog__item {
@@ -4604,15 +4919,15 @@ body button,
 	width: 120px;
 }
 
-.header-contacts {
+.header .header-contacts {
 	width: 150px;
 }
 
-.phones p {
+.header .phones p {
 	font-size: 16px;
 }
 
-.phones .phones__link {
+.header .phones .phones__link {
 	font-size: 15px;
 	padding: 5px 10px;
 	margin-top: 0;
