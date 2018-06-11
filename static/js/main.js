@@ -127,16 +127,52 @@
     // gallery
     var gallery1 = [
         {
-            "src": './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            "src": './static/media/gallery/1childrens/1.jpg',
+            'thumb': './static/media/gallery/1childrens/1.jpg'
         },
         {
-            'src': './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            'src': './static/media/gallery/1childrens/2.jpg',
+            'thumb': './static/media/gallery/1childrens/2.jpg'
         },
         {
-            'src': './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            'src': './static/media/gallery/1childrens/3.jpg',
+            'thumb': './static/media/gallery/1childrens/3.jpg'
+        },
+        {
+            "src": './static/media/gallery/1childrens/4.jpg',
+            'thumb': './static/media/gallery/1childrens/4.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/5.jpg',
+            'thumb': './static/media/gallery/1childrens/5.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/6.jpg',
+            'thumb': './static/media/gallery/1childrens/6.jpg'
+        },
+        {
+            "src": './static/media/gallery/1childrens/7.jpg',
+            'thumb': './static/media/gallery/1childrens/7.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/8.jpg',
+            'thumb': './static/media/gallery/1childrens/8.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/9.jpg',
+            'thumb': './static/media/gallery/1childrens/9.jpg'
+        },
+        {
+            "src": './static/media/gallery/1childrens/10.jpg',
+            'thumb': './static/media/gallery/1childrens/10.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/11.jpg',
+            'thumb': './static/media/gallery/1childrens/11.jpg'
+        },
+        {
+            'src': './static/media/gallery/1childrens/12.jpg',
+            'thumb': './static/media/gallery/1childrens/12.jpg'
         }
     ];
     var gallery2 = [
@@ -155,108 +191,140 @@
     ];
     var gallery3 = [
         {
-            "src": './static/media/gallery/3/1.jpg',
-            'thumb': './static/media/gallery/3/1.jpg'
+            "src": './static/media/gallery/3bedrooms/1.jpg',
+            'thumb': './static/media/gallery/3bedrooms/1.jpg'
         },
         {
-            'src': './static/media/gallery/3/2.jpg',
-            'thumb': './static/media/gallery/3/2.jpg'
+            'src': './static/media/gallery/3bedrooms/2.jpg',
+            'thumb': './static/media/gallery/3bedrooms/2.jpg'
         },
         {
-            'src': './static/media/gallery/3/3.jpg',
-            'thumb': './static/media/gallery/3/3.jpg'
+            'src': './static/media/gallery/3bedrooms/3.jpg',
+            'thumb': './static/media/gallery/3bedrooms/3.jpg'
         },
         {
-            "src": './static/media/gallery/3/4.jpg',
-            'thumb': './static/media/gallery/3/4.jpg'
+            "src": './static/media/gallery/3bedrooms/4.jpg',
+            'thumb': './static/media/gallery/3bedrooms/4.jpg'
         },
         {
-            'src': './static/media/gallery/3/5.jpg',
-            'thumb': './static/media/gallery/3/5.jpg'
+            'src': './static/media/gallery/3bedrooms/5.jpg',
+            'thumb': './static/media/gallery/3bedrooms/5.jpg'
         },
         {
-            'src': './static/media/gallery/3/6.jpg',
-            'thumb': './static/media/gallery/3/6.jpg'
+            'src': './static/media/gallery/3bedrooms/6.jpg',
+            'thumb': './static/media/gallery/3bedrooms/6.jpg'
         },
         {
-            "src": './static/media/gallery/3/7.jpg',
-            'thumb': './static/media/gallery/3/7.jpg'
+            "src": './static/media/gallery/3bedrooms/7.jpg',
+            'thumb': './static/media/gallery/3bedrooms/7.jpg'
         },
         {
-            'src': './static/media/gallery/3/8.jpg',
-            'thumb': './static/media/gallery/3/8.jpg'
+            'src': './static/media/gallery/3bedrooms/8.jpg',
+            'thumb': './static/media/gallery/3bedrooms/8.jpg'
         },
         {
-            'src': './static/media/gallery/3/9.jpg',
-            'thumb': './static/media/gallery/3/9.jpg'
+            'src': './static/media/gallery/3bedrooms/9.jpg',
+            'thumb': './static/media/gallery/3bedrooms/9.jpg'
         },
         {
-            "src": './static/media/gallery/3/10.jpg',
-            'thumb': './static/media/gallery/3/10.jpg'
+            "src": './static/media/gallery/3bedrooms/10.jpg',
+            'thumb': './static/media/gallery/3bedrooms/10.jpg'
         },
         {
-            'src': './static/media/gallery/3/11.jpg',
-            'thumb': './static/media/gallery/3/11.jpg'
+            'src': './static/media/gallery/3bedrooms/11.jpg',
+            'thumb': './static/media/gallery/3bedrooms/11.jpg'
         },
         {
-            'src': './static/media/gallery/3/12.jpg',
-            'thumb': './static/media/gallery/3/12.jpg'
+            'src': './static/media/gallery/3bedrooms/12.jpg',
+            'thumb': './static/media/gallery/3bedrooms/12.jpg'
         },
         {
-            "src": './static/media/gallery/3/13.jpg',
-            'thumb': './static/media/gallery/3/13.jpg'
+            "src": './static/media/gallery/3bedrooms/13.jpg',
+            'thumb': './static/media/gallery/3bedrooms/13.jpg'
         },
         {
-            'src': './static/media/gallery/3/14.jpg',
-            'thumb': './static/media/gallery/3/14.jpg'
+            'src': './static/media/gallery/3bedrooms/14.jpg',
+            'thumb': './static/media/gallery/3bedrooms/14.jpg'
         },
         {
-            'src': './static/media/gallery/3/15.jpg',
-            'thumb': './static/media/gallery/3/15.jpg'
+            'src': './static/media/gallery/3bedrooms/15.jpg',
+            'thumb': './static/media/gallery/3bedrooms/15.jpg'
         },
         {
-            "src": './static/media/gallery/3/16.jpg',
-            'thumb': './static/media/gallery/3/16.jpg'
+            "src": './static/media/gallery/3bedrooms/16.jpg',
+            'thumb': './static/media/gallery/3bedrooms/16.jpg'
         },
         {
-            'src': './static/media/gallery/3/17.jpg',
-            'thumb': './static/media/gallery/3/17.jpg'
+            'src': './static/media/gallery/3bedrooms/17.jpg',
+            'thumb': './static/media/gallery/3bedrooms/17.jpg'
         },
         {
-            'src': './static/media/gallery/3/18.jpg',
-            'thumb': './static/media/gallery/3/18.jpg'
+            'src': './static/media/gallery/3bedrooms/18.jpg',
+            'thumb': './static/media/gallery/3bedrooms/18.jpg'
         },
         {
-            "src": './static/media/gallery/3/19.jpg',
-            'thumb': './static/media/gallery/3/19.jpg'
+            "src": './static/media/gallery/3bedrooms/19.jpg',
+            'thumb': './static/media/gallery/3bedrooms/19.jpg'
         },
         {
-            'src': './static/media/gallery/3/20.jpg',
-            'thumb': './static/media/gallery/3/20.jpg'
+            'src': './static/media/gallery/3bedrooms/20.jpg',
+            'thumb': './static/media/gallery/3bedrooms/20.jpg'
         },
         {
-            'src': './static/media/gallery/3/21.jpg',
-            'thumb': './static/media/gallery/3/21.jpg'
+            'src': './static/media/gallery/3bedrooms/21.jpg',
+            'thumb': './static/media/gallery/3bedrooms/21.jpg'
         },
         {
-            "src": './static/media/gallery/3/22.jpg',
-            'thumb': './static/media/gallery/3/22.jpg'
+            "src": './static/media/gallery/3bedrooms/22.jpg',
+            'thumb': './static/media/gallery/3bedrooms/22.jpg'
         },
         {
-            'src': './static/media/gallery/3/23.jpg',
-            'thumb': './static/media/gallery/3/23.jpg'
+            'src': './static/media/gallery/3bedrooms/23.jpg',
+            'thumb': './static/media/gallery/3bedrooms/23.jpg'
         },
         {
-            'src': './static/media/gallery/3/24.jpg',
-            'thumb': './static/media/gallery/3/24.jpg'
+            'src': './static/media/gallery/3bedrooms/24.jpg',
+            'thumb': './static/media/gallery/3bedrooms/24.jpg'
         },
         {
-            "src": './static/media/gallery/3/25.jpg',
-            'thumb': './static/media/gallery/3/25.jpg'
+            "src": './static/media/gallery/3bedrooms/25.jpg',
+            'thumb': './static/media/gallery/3bedrooms/25.jpg'
         },
         {
-            'src': './static/media/gallery/3/26.jpg',
-            'thumb': './static/media/gallery/3/26.jpg'
+            'src': './static/media/gallery/3bedrooms/26.jpg',
+            'thumb': './static/media/gallery/3bedrooms/26.jpg'
+        },
+        {
+            "src": './static/media/gallery/3bedrooms/27.jpg',
+            'thumb': './static/media/gallery/3bedrooms/27.jpg'
+        },
+        {
+            'src': './static/media/gallery/3bedrooms/28.jpg',
+            'thumb': './static/media/gallery/3bedrooms/28.jpg'
+        },
+        {
+            "src": './static/media/gallery/3bedrooms/29.jpg',
+            'thumb': './static/media/gallery/3bedrooms/29.jpg'
+        },
+        {
+            'src': './static/media/gallery/3bedrooms/30.jpg',
+            'thumb': './static/media/gallery/3bedrooms/30.jpg'
+        },
+        {
+            "src": './static/media/gallery/3bedrooms/31.jpg',
+            'thumb': './static/media/gallery/3bedrooms/31.jpg'
+        },
+        {
+            'src': './static/media/gallery/3bedrooms/32.jpg',
+            'thumb': './static/media/gallery/3bedrooms/32.jpg'
+        },
+        {
+            "src": './static/media/gallery/3bedrooms/33.jpg',
+            'thumb': './static/media/gallery/3bedrooms/33.jpg'
+        },
+        {
+            'src': './static/media/gallery/3bedrooms/34.jpg',
+            'thumb': './static/media/gallery/3bedrooms/34.jpg'
         }
     ];
     var gallery4 = [
