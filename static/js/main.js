@@ -177,16 +177,80 @@
     ];
     var gallery2 = [
         {
-            "src": './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            "src": './static/media/gallery/2livingroom/1.jpg',
+            'thumb': './static/media/gallery/2livingroom/1.jpg'
         },
         {
-            'src': './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            'src': './static/media/gallery/2livingroom/2.jpg',
+            'thumb': './static/media/gallery/2livingroom/2.jpg'
         },
         {
-            'src': './static/media/portfolio/27519_DSC_0332.JPG',
-            'thumb': './static/img/gallery-work/9.jpg'
+            'src': './static/media/gallery/2livingroom/3.jpg',
+            'thumb': './static/media/gallery/2livingroom/3.jpg'
+        },
+        {
+            "src": './static/media/gallery/2livingroom/4.jpg',
+            'thumb': './static/media/gallery/1childrens/4.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/5.jpg',
+            'thumb': './static/media/gallery/1childrens/5.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/6.jpg',
+            'thumb': './static/media/gallery/2livingroom/6.jpg'
+        },
+        {
+            "src": './static/media/gallery/2livingroom/7.jpg',
+            'thumb': './static/media/gallery/2livingroom/7.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/8.jpg',
+            'thumb': './static/media/gallery/2livingroom/8.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/9.jpg',
+            'thumb': './static/media/gallery/2livingroom/9.jpg'
+        },
+        {
+            "src": './static/media/gallery/2livingroom/10.jpg',
+            'thumb': './static/media/gallery/1childrens/10.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/11.jpg',
+            'thumb': './static/media/gallery/1childrens/11.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/12.jpg',
+            'thumb': './static/media/gallery/2livingroom/12.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/13.jpg',
+            'thumb': './static/media/gallery/1childrens/13.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/14.jpg',
+            'thumb': './static/media/gallery/2livingroom/14.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/15.jpg',
+            'thumb': './static/media/gallery/1childrens/15.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/16.jpg',
+            'thumb': './static/media/gallery/2livingroom/16.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/17.jpg',
+            'thumb': './static/media/gallery/1childrens/17.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/18.jpg',
+            'thumb': './static/media/gallery/2livingroom/18.jpg'
+        },
+        {
+            'src': './static/media/gallery/2livingroom/19.jpg',
+            'thumb': './static/media/gallery/1childrens/19.jpg'
         }
     ];
     var gallery3 = [
