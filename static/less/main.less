@@ -27,13 +27,11 @@ html, body, .wrapper {
     background-color: @body-color;
     .main {
         min-height: 100%;
-        margin-bottom: -102px;
+        margin-bottom: -@footer-size;
         .all {
-            padding-bottom: 102px;
+            padding-bottom: @footer-size;
             @media (max-width: 768px) {
             }
-        }
-        @media (max-width: 768px) {
         }
     }
     img {
@@ -52,9 +50,9 @@ html, body, .wrapper {
 }
 
 .footer {
-    background-color: rgba(49, 49, 64, .8);
+    background-color: @main-color;
     color: #ffffff;
-    min-height: 102px;
+    min-height: @footer-size;
     text-align: center;
     overflow: hidden;
     .copyright {
@@ -82,33 +80,5 @@ html, body, .wrapper {
         }
     }
     @media (max-width: 768px) {
-    }
-}
-
-.footer-menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-weight: 300;
-    font-size: 0;
-    .footer-menu__item {
-        display: inline-block;
-        font-size: 16px;
-    }
-    .footer-menu__link {
-        display: block;
-        padding: 10px 25px;
-        color: inherit;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    .active {
-        color: #eee;
-        font-weight: 600;
-    }
-    @media (max-width: 768px) {
-        display: none;
     }
 }

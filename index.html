@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:700&amp;subset=cyrillic"
           rel="stylesheet">
+    <link rel="stylesheet" href="static/libs/lightgallery/css/lightGallery.css"/>
     <link rel="stylesheet" href="static/css/style.min.css"/>
 </head>
 <body>
@@ -60,7 +61,8 @@
                                      title="Студия дизайна Шторы и Декор">
                             </a>
                             <div class="header-slogan">
-                                Дизайн и пошив штор, предметы интерьера, дамские аксессуары и сувениры
+                                Салог "Шторы и Декор" поможет вам выбраться из серого и обыденного
+                                интерьера и перенестись в одновременно домашнюю но стильную атмосферу.
                             </div>
                         </div>
 
@@ -68,11 +70,12 @@
                             <div class="address">
                                 <p>МО. г Балашиха</p>
                                 <p>ул Советская, д 10а</p>
-                                <p>europasia@list.ru</p>
+                                <p>Shtori-i-dekor@mail.ru</p>
                             </div>
                             <div class="phones">
-                                <p>+7 901 753-13-42</p>
-                                <a class="phones__link fancybox" href="#header-phone">Заказать звонок</a>
+                                <p>+7 916 581-17-15</p>
+                                <a class="phones__link fancybox" id="headerPhoneBtn" href="#header-phone">Заказать
+                                    звонок</a>
                             </div>
                         </div>
 
@@ -80,28 +83,28 @@
                 </div>
             </header>
 
-            <nav class="top-menu">
-                <div class="container">
-                    <a href="" class="top-menu__toggle">Меню</a>
-                    <ul class="top-menu__list">
-                        <li class="top-menu__item">
-                            <a href="index.html" class="top-menu__link active">Главная</a>
-                        </li>
-                        <li class="top-menu__item">
-                            <a href="about.html" class="top-menu__link">О нас</a>
-                        </li>
-                        <li class="top-menu__item">
-                            <a href="services.html" class="top-menu__link">Услуги</a>
-                        </li>
+            <!--<nav class="top-menu">-->
+                <!--<div class="container">-->
+                    <!--<a href="" class="top-menu__toggle">Меню</a>-->
+                    <!--<ul class="top-menu__list">-->
                         <!--<li class="top-menu__item">-->
-                        <!--<a href="portfolio.html" class="top-menu__link">Работы</a>-->
+                            <!--<a href="index.html" class="top-menu__link active">Главная</a>-->
                         <!--</li>-->
-                        <li class="top-menu__item">
-                            <a href="contacts.html" class="top-menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                        <!--<li class="top-menu__item">-->
+                            <!--<a href="about.html" class="top-menu__link">О нас</a>-->
+                        <!--</li>-->
+                        <!--<li class="top-menu__item">-->
+                            <!--<a href="services.html" class="top-menu__link">Услуги</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;<li class="top-menu__item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<a href="portfolio.html" class="top-menu__link">Работы</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--<li class="top-menu__item">-->
+                            <!--<a href="contacts.html" class="top-menu__link">Контакты</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</nav>-->
 
             <div class="page-content">
 
@@ -110,11 +113,13 @@
                         <div class="first__wrap">
                             <div class="first__left">
                                 <h2 class="first__title">Пошейте шторы подходящие на 100% к вашему интерьеру</h2>
-                                <p>Без нервотрепки, точно в срок с гарантией 2 года</p>
-                                <ul>
-                                    <li>Собственный швейный цех в Москве</li>
-                                    <li>Выезд замерщика и дизайнера бесплатно</li>
-                                    <li>Договор с четкими сроками, прозрачными ценами</li>
+                                <p class="first__descr">
+                                    Без нервотрепки, точно в срок с гарантией 2 года
+                                </p>
+                                <ul class="first__list">
+                                    <li class="first__item">Собственный швейный цех в Москве</li>
+                                    <li class="first__item">Выезд замерщика и дизайнера бесплатно</li>
+                                    <li class="first__item">Договор с четкими сроками, прозрачными ценами</li>
                                 </ul>
                             </div>
                             <div class="first__right">
@@ -182,96 +187,295 @@
                     </div>
                 </section>
 
-                <section class="portfolio">
-                    <div class="container">
-                        <h2 class="portfolio__title">Наше портфолио</h2>
+                <section class="we-offer">
+                    <h2 class="we-offer__title">МЫ ПРЕДЛАГАЕМ ЛЮБОЕ ОФОРМЛЕНИЕ ОКОН И ТЕКСТИЛЬ</h2>
 
-                        <p class="portfolio__descr">
-                            Наши специалисты выполняют заказы любой сложности от простых решений в типовых квартирах до
-                            разработки
-                            уникального дизайна.
-                        </p>
+                    <div class="container">
+                        <ul class="we-offer__list">
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/1.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Шторы и ламбрекены</p>
+                            </li>
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/2.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Жалюзи</p>
+                            </li>
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/3.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Карнизы для штор</p>
+                            </li>
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/4.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Рулонные шторы</p>
+                            </li>
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/5.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Шторы плиссе</p>
+                            </li>
+                            <li class="we-offer__item">
+                                <img src="./static/img/we-offer/6.jpg" class="we-offer__img" alt="benefits">
+                                <p class="we-offer__text">Домашний текстиль</p>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="portfolio-slider">
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/1.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/1.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 1</p>-->
-                        </li>
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/2.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/2.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 2</p>-->
-                        </li>
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/3.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/3.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 3</p>-->
-                        </li>
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/4.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/4.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 4</p>-->
-                        </li>
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/5.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/5.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 5</p>-->
-                        </li>
-                        <li class="portfolio-slider__item">
-                            <a href="./static/media/slider-works/6.jpg" rel="group"
-                               class="fancybox portfolio-slider__link">
-                                <img src="./static/media/slider-works/6.jpg" alt="работа" class="portfolio-slider__img">
-                            </a>
-                            <!--<p class="portfolio-slider__descr">Работа 6</p>-->
-                        </li>
-                    </ul>
+                </section>
+
+                <section class="feedback">
+                    <h2 class="feedback-title">
+                        НУЖНА КОНСУЛЬТАЦИЯ? <br>
+                        <span>ОСТАВЬТЕ ЗАЯВКУ</span> - МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 1 ЧАСА!
+                    </h2>
+                    <form class="container feedback-form js-order-form">
+                        <input type="text" placeholder="Имя *" name="order-name" class="feedback-input" required>
+                        <input type="tel" placeholder="+7 XXX XXX XX XX" name="order-phone"
+                               class="feedback-input my-phone" required>
+                        <button class="feedback-btn">Отправить</button>
+                    </form>
+                </section>
+
+                <section class="curtains-for-various">
+                    <div class="container">
+                        <div class="curtains-for-various__part">
+                            <h2 class="curtains-for-various__title">ШТОРЫ ДЛЯ РАЗЛИЧНЫХ ПОМЕЩЕНИЙ</h2>
+                            <p class="curtains-for-various__descr">
+                                Функции разных помещений дома влияют на особенности оформление окон.
+                                Мы предложим Вам рациональный выбор моделей и материалов штор, карнизов, жалюзи,
+                                плиссе и др. Это позволит сделать помещения удобными,
+                                а также, сэкономить ваше время и деньги!
+                            </p>
+                            <ul class="curtains-for-various__list">
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/1.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Детская</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/2.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Гостиная</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/3.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Кабинет</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/4.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Кухня</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/5.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Спальня</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/6.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Ванная</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curtains-for-various__part">
+                            <h2 class="curtains-for-various__title">ШТОРЫ В РАЗЛИЧНЫХ СТИЛЯХ</h2>
+                            <p class="curtains-for-various__descr">
+                                Как соответствовать любимому стилю при оформлении окон? Какие варианты штор, тканей,
+                                карнизов предпочесть? Дизайнер подскажет Вам правильные решения, подготовит эскизы и
+                                предложит образцы тканей в любом из существующих стилей!
+                            </p>
+                            <ul class="curtains-for-various__list">
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/7.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Классический</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/8.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Этнический</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img" src="./static/img/curtains-for-various/9.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Фьюжн</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img"
+                                         src="./static/img/curtains-for-various/10.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Деревенский</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img"
+                                         src="./static/img/curtains-for-various/11.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Прованс</p>
+                                </li>
+                                <li class="curtains-for-various__item">
+                                    <img class="curtains-for-various__img"
+                                         src="./static/img/curtains-for-various/12.jpg"
+                                         alt="">
+                                    <p class="curtains-for-various__text">Современный</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="designer-house">
+                    <div class="container">
+                        <div class="designer-house__inner">
+                            <div class="designer-house__left">
+                                <img src="./static/img/designer-house.png" class="designer-house__img" alt="designer">
+                            </div>
+                            <div class="designer-house__right">
+                                <h3 class="designer-house__title">ВЫЗВАТЬ ДИЗАЙНЕРА НА ДОМ</h3>
+                                <p class="designer-house__text">
+                                    Профессиональный дизайнер по текстилю приедет к Вам домой, чтобы произвести замеры.
+                                    Специалист покажет образцы тканей и порекомендует то, что подходит к цветовой гамме
+                                    Вашего интерьера. При Вас дизайнер сделает несколько зарисовок Ваших будущих штор и
+                                    составит предварительную смету проекта.
+                                </p>
+                                <a href="#designer-phone" class="designer-house__btn fancybox" id="designerHouseBtn">Вызвать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-of-works">
+                    <h3 class="gallery-of-works__title">Галерея работ и идей</h3>
+                    <p class="gallery-of-works__descr">Смотрите фото наших реальных работ и макеты проектов.</p>
+
+                    <div class="container">
+                        <ul class="gallery-of-works__list">
+                            <li class="gallery-of-works__item">
+                                <div class="gallery-of-works__big gallery-of-works__hover">
+                                    <img src="./static/img/gallery-work/1.jpg" class="gallery-of-works__img" alt="img">
+                                    <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery1">
+                                        <p>Комплект штор в коттедж</p>
+                                    </a>
+                                </div>
+                                <div class="gallery-of-works__smalls">
+                                    <div class="gallery-of-works__small gallery-of-works__hover">
+                                        <img src="./static/img/gallery-work/2.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery2">
+                                            <p>Комплект штор в гостиную</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover">
+                                        <img src="./static/img/gallery-work/3.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Комплект штор в спальню</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover gallery-of-works__small_nomargin">
+                                        <img src="./static/img/gallery-work/4.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Комплект штор в кабинет</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover gallery-of-works__small_nomargin">
+                                        <img src="./static/img/gallery-work/5.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Комплект штор французские шторы</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="gallery-of-works__item">
+                                <div class="gallery-of-works__smalls">
+                                    <div class="gallery-of-works__small gallery-of-works__hover">
+                                        <img src="./static/img/gallery-work/6.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Шторы в коттедж Алые с золотым</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover">
+                                        <img src="./static/img/gallery-work/7.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Классические шторы в гостиную</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover gallery-of-works__small_nomargin">
+                                        <img src="./static/img/gallery-work/8.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>Комплект штор для квартиры студии</p>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-of-works__small gallery-of-works__hover gallery-of-works__small_nomargin">
+                                        <img src="./static/img/gallery-work/9.jpg" class="gallery-of-works__img"
+                                             alt="img">
+                                        <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                            <p>В светлые шторы для коттеджа</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="gallery-of-works__big gallery-of-works__hover">
+                                    <img src="./static/img/gallery-work/10.jpg" class="gallery-of-works__img" alt="img">
+                                    <a href="#" class="gallery-of-works__inner js-gallery-run" data-href="gallery3">
+                                        <p>Коттедж нашего клиента</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="gallery-of-works__link-group">
+                            <a href="#view-catalog" class="gallery-of-works__link fancybox">Посмотреть каталог</a>
+
+                            <p>Вы можете увидеть полный каталог наших работ и идей, который мы собирали в те6чение 13
+                                лет.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="benefits-bottom">
+                    <div class="container">
+                        <h2 class="benefits-bottom__title">НАШИ ПРЕИМУЩЕСТВА</h2>
+                        <ul class="benefits-bottom__list">
+                            <li class="benefits-bottom__item">
+                                <img src="./static/img/benefits-bottom/1.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Наличие салона и собственного пошивочного цеха</p>
+                            </li>
+                            <li class="benefits-bottom__item">
+                                <img src="./static/img/benefits-bottom/2.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Большой выбор тканей со склада (более 18,5 тыс
+                                    вариантов)</p>
+                            </li>
+                            <li class="benefits-bottom__item">
+                                <img src="./static/img/benefits-bottom/3.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Дипломированные дизайнеры с опытом работы более 8
+                                    лет</p>
+                            </li>
+                            <li class="benefits-bottom__item">
+                                <img src="./static/img/benefits-bottom/4.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Профессиональные замерщики-установщики с опытом работы
+                                    более 10 лет</p>
+                            </li>
+                            <li class="benefits-bottom__item benefits-bottom__item_nomargin">
+                                <img src="./static/img/benefits-bottom/5.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Квалифицированные швеи со стажем более 15 лет</p>
+                            </li>
+                            <li class="benefits-bottom__item benefits-bottom__item_nomargin">
+                                <img src="./static/img/benefits-bottom/6.png" alt="img" class="benefits-bottom__img">
+                                <p class="benefits-bottom__text">Заключение официального Договора</p>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
                 <div class="how-works">
-
                     <div class="container">
                         <h3 class="how-works__title">Как мы работаем</h3>
-
                         <ul class="how-works__list">
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">1</span>-->
-                            <!--        <p class="how-works__text">Вы оставляете заявку</p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">2</span>-->
-                            <!--        <p class="how-works__text">Наш менеджер связывается с Вами</p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">3</span>-->
-                            <!--        <p class="how-works__text">Дизайнер приезжает к вам домой </p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">4</span>-->
-                            <!--        <p class="how-works__text">Утверждаем дизайн проект, подписываем договор и приступаем к работе</p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">5</span>-->
-                            <!--        <p class="how-works__text">Устанавливаем карнизы</p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">6</span>-->
-                            <!--        <p class="how-works__text">Вешаем сшитые для Вас шторы</p>-->
-                            <!--      </li>-->
-                            <!--      <li class="how-works__item">-->
-                            <!--        <span class="how-works__number">6</span>-->
-                            <!--        <p class="how-works__text">Вы довольны и радуетесь красоте и уюту в Вашем доме</p>-->
-                            <!--      </li>-->
                             <li class="how-works__item">
                                 <img class="how-works__img" src="./static/img/how-work/1.png" alt="">
                                 <p class="how-works__text">Вы оставляете заявку</p>
@@ -303,72 +507,79 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
 
-                <section class="benefits">
-                    <div class="container">
-                        <h2 class="benefits__title">Преимущества нашей компании</h2>
+                <section class="feedback">
+                    <h2 class="feedback-title">
+                        НУЖНА КОНСУЛЬТАЦИЯ? <br>
+                        <span>ОСТАВЬТЕ ЗАЯВКУ</span> - МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 1 ЧАСА!
+                    </h2>
+                    <form class="container feedback-form js-order-form">
+                        <input type="text" placeholder="Имя *" name="order-name" class="feedback-input" required>
+                        <input type="tel" placeholder="+7 XXX XXX XX XX" name="order-phone"
+                               class="feedback-input my-phone" required>
+                        <button class="feedback-btn">Отправить</button>
+                    </form>
+                </section>
 
-                        <ul class="benefits__list">
-                            <li class="benefits__item">100% гарантии качества пошива. Собственный цех,
-                                высококвалифицированные швеи.
+                <div class="about-our-warranties">
+                    <h3 class="about-our-warranties__title">Узнайте о наших гарантиях</h3>
+                    <p class="about-our-warranties__descr">
+                        Мы гарантируем, что наши шторы превзойдут Ваши ожидания! Более 2 500 клиентов не могут ошибаться
+                    </p>
+                    <div class="container">
+                        <ul class="about-our-warranties__list">
+                            <li class="about-our-warranties__item">
+                                <img src="./static/img/about-our-warranties/1.gif" alt="img"
+                                     class="about-our-warranties__img">
+                                <p class="about-our-warranties__text">Гарантии на шторы <br>2 года</p>
                             </li>
-                            <li class="benefits__item">Наш договор защищает Вас, четко приписываем сроки работы, цену,
-                                материалы, нашу ответственность
+                            <li class="about-our-warranties__item">
+                                <img src="./static/img/about-our-warranties/2.gif" alt="img"
+                                     class="about-our-warranties__img">
+                                <p class="about-our-warranties__text">
+                                    Гарантия работы официально и по договору
+                                    <strong>
+                                        Договор, в первую очередь, нужен Вам, а не нам, так как защищает Ваши интересы
+                                        как потребителя.
+                                    </strong>
+                                </p>
                             </li>
-                            <li class="benefits__item">Более 5000 довольных клиентов</li>
-                            <li class="benefits__item">Наша студия находится в центре города. У нас работают
-                                профессиональные дизайнеры.
-                            </li>
-                            <li class="benefits__item">Более 12000 дизайнов тканей различных ценовых категорий от
-                                недорогих до эксклюзивных.
-                                <br> И более 4000 из них в наличии на складе
-                            </li>
-                            <li class="benefits__item">
-                                У нас огромный ассортимент готовой продукции для оформления интерьеров, есть
-                                эксклюзивные аксессуары для милых дам и всевозможные подарки из Европы и Азии
+                            <li class="about-our-warranties__item">
+                                <img src="./static/img/about-our-warranties/3.gif" alt="img"
+                                     class="about-our-warranties__img">
+                                <p class="about-our-warranties__text">Гарантия выполнения заказа точно в срок.</p>
                             </li>
                         </ul>
                     </div>
-                </section>
+                </div>
 
-                <section class="bottom-order">
-                    <div class="container">
-                        <h2 class="bottom-order__title">Остались вопросы?</h2>
+                <div class="index-contacts">
+                    <h3 class="index-contacts__title">КОНТАКТЫ</h3>
 
-                        <form class="bottom-order__form js-order-form">
-                            <input type="text" name="order-name" placeholder="Ваше имя" required>
-                            <input type="tel" class="my-phone" name="order-phone" placeholder="+7 XXX XXX XX XX"
-                                   required>
-                            <p class="msg-text">Отправлено</p>
-                            <button type="submit">Отправить заявку</button>
-                        </form>
+                    <div class="index-contacts-form__inner">
+                        <div class="index-contacts-form">
+                            <h4 class="index-contacts-form__title">
+                                Оформите заявку через сайт <br>и получите скидку 20%
+                            </h4>
+                            <form method="post" class="js-order-form">
+                                <input type="text" name="order-name" class="index-contacts-form__input" placeholder="Ваше имя">
+                                <input type="tel" name="order-phone" class="index-contacts-form__input my-phone" placeholder="+7 XXX XXX XX XX">
+                                <button type="submit" class="index-contacts-form__button">Отправить заявку</button>
+                            </form>
+                            <p class="index-contacts-form__text">* Предложение действует до конца месяца.</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="index-map-block" id="map-block">
+                        <!--<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5HzboHVv9GCD8R0Quug_YPIg0DmGW8Q7&amp;width=100%25&amp;height=555&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+                    </div>
+                </div>
 
             </div>
 
         </div>
     </div>
     <div class="footer">
-        <ul class="footer-menu">
-            <li class="footer-menu__item active">
-                <a href="index.html" class="footer-menu__link">Главная</a>
-            </li>
-            <li class="footer-menu__item">
-                <a href="about.html" class="footer-menu__link">О нас</a>
-            </li>
-            <li class="footer-menu__item">
-                <a href="services.html" class="footer-menu__link">Услуги</a>
-            </li>
-            <!--<li class="footer-menu__item">-->
-            <!--<a href="portfolio.html" class="footer-menu__link">Работы</a>-->
-            <!--</li>-->
-            <li class="footer-menu__item">
-                <a href="contacts.html" class="footer-menu__link">Контакты</a>
-            </li>
-        </ul>
         <div class="container">
             <p class="copyright">Copyright: 2018 - Студия дизайна "Шторы и Декор"</p>
             <a href="http://alisultanov.ru/" target="_blank" class="made-site">Разработка сайта - Alisultanov.ru</a>
@@ -380,11 +591,32 @@
 <!--modals-->
 <div class="hidden">
     <div id="header-phone" class="phone-modal">
-        <h3 class="header-phone-modal__title">Заказать звонок</h3>
+        <h3 class="header-phone__title">Заказать звонок</h3>
 
-        <form action="" method="post" class="js-order-form">
-            <input type="text" name="order-name" class="phone-modal__input " placeholder="Ваше имя">
-            <input type="text" name="order-phone" class="phone-modal__input my-phone" placeholder="+7 (999)-999-99-99">
+        <form method="post" class="js-order-form">
+            <input type="text" name="order-name" class="phone-modal__input" placeholder="Ваше имя">
+            <input type="tel" name="order-phone" class="phone-modal__input my-phone" placeholder="+7 XXX XXX XX XX">
+            <button type="submit" class="phone-modal__button">Отправить</button>
+        </form>
+    </div>
+
+    <div id="designer-phone" class="phone-modal">
+        <h3 class="header-phone__title">ВЫЗВАТЬ ДИЗАЙНЕРА НА ДОМ</h3>
+
+        <form method="post" class="js-order-form">
+            <input type="text" name="order-name" class="phone-modal__input" placeholder="Ваше имя">
+            <input type="tel" name="order-phone" class="phone-modal__input my-phone" placeholder="+7 XXX XXX XX XX">
+            <button type="submit" class="phone-modal__button">Отправить</button>
+        </form>
+    </div>
+
+    <div id="view-catalog" class="phone-modal">
+        <p class="view-catalog-form-text">Заполните форму и мы вам отправим наши работы</p>
+
+        <form method="post" class="js-order-form">
+            <input type="text" name="order-name" class="phone-modal__input" placeholder="Ваше имя">
+            <input type="email" name="order-email" class="phone-modal__input" placeholder="Ваш email">
+            <input type="tel" name="order-phone" class="phone-modal__input my-phone" placeholder="+7 XXX XXX XX XX">
             <button type="submit" class="phone-modal__button">Отправить</button>
         </form>
     </div>
@@ -394,10 +626,37 @@
 
 
 <script src="static/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 <script src="static/libs/jquery-ui/jquery-ui.min.js"></script>
 <script src="static/libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="static/libs/lightslider/js/lightslider.min.js"></script>
+<script src="static/libs/lightgallery/js/lightGallery.min.js"></script>
 <script src="static/libs/inputmasked/jquery.maskedinput.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(init);
+    var myMap = null;
+    var myPlacemark = null;
+
+    function init() {
+        myMap = new ymaps.Map("map-block", {
+            center: [55.799765, 37.936636],
+            zoom: 11,
+            controls: ['zoomControl'],
+            behaviors: ['drag']
+        });
+
+        myPlacemark = new ymaps.Placemark(
+            [55.799765, 37.936636],
+            {
+                hintContent: 'Россия, Московская область, Балашиха, Советская улица, 10А',
+                balloonContent: 'Шторы и Декор'
+            }
+        );
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
 <script src="static/js/main.js"></script>
 
 </body>
