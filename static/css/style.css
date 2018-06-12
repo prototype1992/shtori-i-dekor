@@ -2165,13 +2165,6 @@ a:hover {
 	text-decoration: none;
 }
 
-.develop {
-	text-align: center;
-	background-color: red;
-	color: #ffffff;
-	padding: 5px 0;
-}
-
 .header {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #ffffff;
@@ -2262,44 +2255,6 @@ a:hover {
 	border: 1px solid #d0aa3f;
 	background-color: #fff;
 	color: #d0aa3f;
-}
-
-.top-menu {
-	display: none;
-	border-bottom: 1px solid #000000;
-	background-color: #ffffff;
-}
-
-.top-menu .top-menu__list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	display: table;
-	width: 100%;
-}
-
-.top-menu .top-menu__item {
-	display: table-cell;
-	vertical-align: middle;
-	width: 1%;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.top-menu .top-menu__link {
-	display: block;
-	padding: 14px 10px;
-	text-decoration: none;
-}
-
-.top-menu .top-menu__link:hover {
-	background-color: #63265d;
-	color: #ffffff;
-}
-
-.top-menu .active {
-	background-color: #63265d;
-	color: #ffffff;
 }
 
 .first {
@@ -2934,10 +2889,25 @@ a:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #ffffff;
-	font-size: 20px;
-	padding: 0 20px;
+	font-size: 18px;
+	padding: 40px 20px 0;
 	text-align: center;
 	text-shadow: 0 0 2px #000;
+	position: relative;
+}
+
+.gallery-of-works .gallery-of-works__inner p:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-image: url('../img/loupe.png');
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
 }
 
 .gallery-of-works .gallery-of-works__link-group {
@@ -3817,14 +3787,6 @@ body button,
 
 }
 
-@media (min-width: 769px) {
-
-.top-menu .top-menu__toggle {
-	display: none;
-}
-
-}
-
 @media (min-width: 800px) {
 
 #lightGallery-Gallery .thumb_cont .thumb {
@@ -4555,32 +4517,6 @@ body button,
 
 .header .header-slogan {
 	display: none;
-}
-
-.top-menu .top-menu__toggle {
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	position: relative;
-}
-
-.top-menu .top-menu__toggle:after {
-	content: '';
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	background-image: url('../img/menu-toggle.svg');
-	width: 24px;
-	height: 24px;
-}
-
-.top-menu .top-menu__list {
-	display: none;
-}
-
-.top-menu .top-menu__item {
-	display: block;
-	width: 100%;
 }
 
 .first .first__input {

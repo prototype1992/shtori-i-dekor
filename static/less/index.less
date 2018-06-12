@@ -10,12 +10,12 @@ a {
     }
 }
 
-.develop {
-    text-align: center;
-    background-color: red;
-    color: #ffffff;
-    padding: 5px 0;
-}
+//.develop {
+//    text-align: center;
+//    background-color: red;
+//    color: #ffffff;
+//    padding: 5px 0;
+//}
 
 .header {
     border-bottom: 2px solid rgba(0, 0, 0, .2);
@@ -127,65 +127,6 @@ a {
                 margin-top: 0;
             }
         }
-    }
-}
-
-.top-menu {
-    display: none;
-    border-bottom: 1px solid #000000;
-    background-color: #ffffff;
-    .top-menu__toggle {
-        @media (min-width: 769px) {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                background-image: url('../img/menu-toggle.svg');
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-    .top-menu__list {
-        .list-clear();
-
-        display: table;
-        width: 100%;
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-    .top-menu__item {
-        display: table-cell;
-        vertical-align: middle;
-        width: 1%;
-        text-align: center;
-        text-transform: uppercase;
-        @media (max-width: 768px) {
-            display: block;
-            width: 100%;
-        }
-    }
-    .top-menu__link {
-        display: block;
-        padding: 14px 10px;
-        text-decoration: none;
-        &:hover {
-            background-color: @main-color;
-            color: #ffffff;
-        }
-    }
-    .active {
-        background-color: @main-color;
-        color: #ffffff;
     }
 }
 
@@ -834,18 +775,30 @@ a {
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.7);
-
         display: flex;
         align-items: center;
         justify-content: center;
+
         p {
             margin-top: 0;
             margin-bottom: 0;
             color: #ffffff;
-            font-size: 20px;
-            padding: 0 20px;
+            font-size: 18px;
+            padding: 40px 20px 0;
             text-align: center;
             text-shadow: 0 0 2px #000;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                background-image: url('../img/loupe.png');
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
             @media (max-width: 575px) {
                 font-size: 16px;
             }
